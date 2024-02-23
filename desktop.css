@@ -105,44 +105,61 @@ body {
 }
 
 .card-summary {
+    display: flex;
+    flex-direction: column;
     width: 50%;
 }
 
 .card-summary .card-result__title,
 .rectangle {
     margin-left: 40px;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 
 .rectangle {
     width: 285px;
     height: 55px;
-    opacity: 10%;
     border-radius: 10px;
 }
 
 .reaction {
-    background-color: hsl(0, 100%, 67%);
+    background-color: #FFF6F5;
+    color: hsl(0, 100%, 67%);
+}
+
+.summary-icon {
+    fill: transparent;
+    margin: 15px 0 0 20px;
 }
 
 .memory {
-    background-color: hsl(39, 100%, 56%);
+    background-color: #FFFBF2;
+    color: hsl(39, 100%, 56%);
 }
 
 .verbal {
-    background-color: hsl(166, 100%, 37%);
+    background-color: #F2FBFA;
+    color: hsl(166, 100%, 37%);
+
 }
 
 .visual {
-    background-color: hsl(234, 85%, 45%);
+    background-color: #F3F3FD;
+    color: hsl(234, 85%, 45%)
 }
 
 .btn {
     border: none;
-    background: linear-gradient(hsl(252, 83%, 60%), hsl(241, 81%, 54%));
+    background-color: hsl(224, 30%, 27%);
     color: #fff;
     width: 285px;
     height: 55px;
     border-radius: 30px;
     margin-left: 40px;
+    margin-bottom: 40px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: linear-gradient(hsl(252, 83%, 60%), hsl(241, 81%, 54%));
 }
