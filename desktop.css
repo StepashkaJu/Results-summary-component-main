@@ -125,6 +125,15 @@ body {
     align-items: center;
 }
 
+.rectangle-icon,
+.rectangle-full-result {
+    margin: 15px;
+}
+
+.rectangle-name {
+    margin-right: 25%
+}
+
 .reaction {
     background-color: #FFF6F5;
     color: hsl(0, 100%, 67%);
