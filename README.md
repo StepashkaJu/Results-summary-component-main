@@ -29,7 +29,7 @@ Users should be able to:
 
 ![image](https://github.com/StepashkaJu/Results-summary-component-main/assets/121011573/e85789ce-02e8-45e4-9beb-8752650caa50)
 
-375px
+391px (for iPhone 13, for example)
 
 ![image](https://github.com/StepashkaJu/Results-summary-component-main/assets/121011573/ed4cf558-0ba8-4802-a43a-ff8956d09bbc)
 
