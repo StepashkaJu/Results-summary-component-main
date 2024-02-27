@@ -113,7 +113,6 @@ and found out how I can insert svg-icon, when I had only path to icon in JSON fi
 
 ```
 
-
 ### Useful resources
 
 - [https://www.freecodecamp.org/news/how-to-fetch-data-from-an-api-using-the-fetch-api-in-javascript/] - This helped me to make fetch request. Nice article.
