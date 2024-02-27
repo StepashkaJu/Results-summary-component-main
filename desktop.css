@@ -187,14 +187,15 @@ body {
     .card {
         display: flex;
         flex-direction: column;
-        width: 391px;
+        width: 39.1rem;
+        border-radius: none;
+        box-shadow: none;
     }
 
     .card-result {
         width: 100%;
-        height: 30%;
-        border-bottom-left-radius: 40px;
-        border-bottom-right-radius: 40px;
+        /* height: 40%; */
+        border-radius: 0;
     }
 
     .card-result__title {
@@ -203,8 +204,8 @@ body {
     }
 
     .result-circle {
-        width: 150px;
-        height: 150px;
+        width: 15rem;
+        height: 15rem;
     }
 
     .result-score {
@@ -233,8 +234,8 @@ body {
     }
 
     .rectangle {
-        width: 320px;
-        height: 55px;
+        width: 32rem;
+        height: 5.5rem;
         display: flex;
         justify-content: space-between;
     }
@@ -245,7 +246,7 @@ body {
 
 
     .btn {
-        width: 320px;
+        width: 32rem;
         font-size: 1.8rem;
     }
 }
