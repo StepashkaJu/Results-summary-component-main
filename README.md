@@ -1,7 +1,6 @@
 # Frontend Mentor - Results summary component solution
 
-This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-
+This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). 
 ## Table of contents
 
 - [Overview](#overview)
@@ -11,12 +10,8 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -30,20 +25,18 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+1440px
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+![image](https://github.com/StepashkaJu/Results-summary-component-main/assets/121011573/e85789ce-02e8-45e4-9beb-8752650caa50)
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+375px
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![image](https://github.com/StepashkaJu/Results-summary-component-main/assets/121011573/ed4cf558-0ba8-4802-a43a-ff8956d09bbc)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/StepashkaJu/Results-summary-component-main]
+- Live Site URL: [https://stepashkaju.github.io/Results-summary-component-main/]
 
 ## My process
 
@@ -52,61 +45,78 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
+- JSON data file
+- JavaScript Fetch API
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I found out how I can add fonts using TTF files from the project source files:
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+@font-face {
+    font-family: "Hanken Grotesk";
+    src: url('assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype'),
+        url('assets/fonts/static/HankenGrotesk-Bold.ttf') format('truetype'),
+        url('assets/fonts/static/HankenGrotesk-ExtraBold.ttf') format('truetype'),
+        url('assets/fonts/static/HankenGrotesk-Medium.ttf') format('truetype');
+    font-style: normal;
 }
 ```
+I also used a media query to adapt the layout to the mobile version:
+
+```css
+@media (max-width:375px){
+/* changed styles, for instanse: */
+    .card {
+        flex-direction: column;
+        width: 37.5rem;
+        border-radius: 0;
+        box-shadow: none;
+    }
+}
+```
+and how I can set the card in the middle of the view window:
+
+```css
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+```
+
+I also created js file and make fetch request for fetching a data from a JSON file:
+
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+fetch('.//data.json')
+    .then(response => response.json())
+    .then(data => {
+        data.forEach(element => {
+            let estimationQuality = document.getElementById(element.category);
+            let iconDiv = estimationQuality.getElementsByClassName("rectangle-icon")[0];
+            iconDiv.insertAdjacentHTML("beforeend", `<img src="${element.icon}" />`);
+            let resultDiv = estimationQuality.getElementsByClassName("rectangle-result")[0];
+            resultDiv.innerHTML = element.score;
+            let qualityDiv = estimationQuality.getElementsByClassName("rectangle-name")[0];
+            qualityDiv.innerHTML = element.category;
+            console.log(element)
+        })
+    });
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [https://www.freecodecamp.org/news/how-to-fetch-data-from-an-api-using-the-fetch-api-in-javascript/] - This helped me to make fetch request. Nice article.
+- [https://developer.mozilla.org/] - This is an amazing resource about base princilpes and documents in HTML, CSS and JS. 
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
-
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- GitHub - [StepashkaJu](https://github.com/StepashkaJu)
+- Frontend Mentor - [@StepashkaJu](https://www.frontendmentor.io/profile/StepashkaJu)
 
 ## Acknowledgments
 
 This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
