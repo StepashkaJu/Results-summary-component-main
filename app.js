@@ -10,6 +10,5 @@ fetch('.//data.json')
             resultDiv.innerHTML = element.score;
             let qualityDiv = estimationQuality.getElementsByClassName("rectangle-name")[0];
             qualityDiv.innerHTML = element.category;
-            console.log(element)
         })
     });
