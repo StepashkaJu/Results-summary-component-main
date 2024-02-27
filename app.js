@@ -5,7 +5,7 @@ fetch('.//data.json')
 
             let estimationQuality = document.getElementById(element.category);
             let iconDiv = estimationQuality.getElementsByClassName("rectangle-icon")[0];
-            iconDiv.insertAdjacentHTML("beforeend", `<img src="${element.icon}" />`);
+            iconDiv.insertAdjacentHTML("beforeend", `<img src="${element.icon}" alt="icon"/>`);
             let resultDiv = estimationQuality.getElementsByClassName("rectangle-result")[0];
             resultDiv.innerHTML = element.score;
             let qualityDiv = estimationQuality.getElementsByClassName("rectangle-name")[0];
