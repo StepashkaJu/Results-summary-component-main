@@ -76,7 +76,7 @@ I also used a media query to adapt the layout to the mobile version:
     }
 }
 ```
-and how I can set the card in the middle of the view window:
+and how I could set the card and additional information in the middle of the view window:
 
 ```css
 .container {
@@ -116,7 +116,4 @@ fetch('.//data.json')
 ## Author
 - GitHub - [StepashkaJu](https://github.com/StepashkaJu)
 - Frontend Mentor - [@StepashkaJu](https://www.frontendmentor.io/profile/StepashkaJu)
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+  
