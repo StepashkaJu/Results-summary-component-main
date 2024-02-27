@@ -66,11 +66,11 @@ I found out how I can add fonts using TTF files from the project source files:
 I also used a media query to adapt the layout to the mobile version:
 
 ```css
-@media (max-width:375px){
+@media (max-width:770px){
 /* changed styles, for instanse: */
     .card {
         flex-direction: column;
-        width: 37.5rem;
+        width: 39.1rem;
         border-radius: 0;
         box-shadow: none;
     }
@@ -102,9 +102,15 @@ fetch('.//data.json')
             resultDiv.innerHTML = element.score;
             let qualityDiv = estimationQuality.getElementsByClassName("rectangle-name")[0];
             qualityDiv.innerHTML = element.category;
-            console.log(element)
         })
     });
+```
+and found out how I can insert svg-icon, when I had only path to icon in JSON file:
+
+```js
+ let iconDiv = estimationQuality.getElementsByClassName("rectangle-icon")[0];
+ iconDiv.insertAdjacentHTML("beforeend", `<img src="${element.icon}" />`);
+
 ```
 
 ### Useful resources
