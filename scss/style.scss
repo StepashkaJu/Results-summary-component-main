@@ -1,26 +1,15 @@
-@font-face {
-  font-family: "Hanken Grotesk";
-  src: url("assets/fonts/HankenGrotesk-VariableFont_wght.ttf")
-      format("truetype"),
-    url("assets/fonts/static/HankenGrotesk-Bold.ttf") format("truetype"),
-    url("assets/fonts/static/HankenGrotesk-ExtraBold.ttf") format("truetype"),
-    url("assets/fonts/static/HankenGrotesk-Medium.ttf") format("truetype");
-  font-style: normal;
-}
+@import "./variables";
+@import url(#{$fontUrl});
 
 * {
   box-sizing: border-box;
   margin: 0;
   font-family: "Hanken Grotesk";
-}
-
-html {
-  font-size: 10px;
+  font-size: 18px;
 }
 
 body {
   margin: 0;
-  font-size: 1.8rem;
   background-color: $whiteNeutral;
 }
 
@@ -52,11 +41,10 @@ body {
 }
 
 .card-result__title {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   line-height: 1.5;
   letter-spacing: 0.5px;
   margin: 40px 0;
-  font-weight: 600;
 }
 
 .card-light {
@@ -85,7 +73,7 @@ body {
 
 .result-score {
   color: #fff;
-  font-size: 7rem;
+  font-size: 4rem;
 }
 
 .max-score {
@@ -95,7 +83,7 @@ body {
 .result-type {
   color: #fff;
   margin: 30px 0 25px;
-  font-weight: 500;
+  font-size: 2rem;
 }
 
 .result-meaning {
@@ -156,13 +144,10 @@ body {
 
 .rectangle-result {
   color: $persianBlueGradient;
-  font-weight: bold;
 }
 
 .rectangle-full-result {
   color: $paleBlueNeutral;
-  font-size: 1.8rem;
-  font-weight: bold;
 }
 
 .btn {

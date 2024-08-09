@@ -1,0 +1,263 @@
+@import url(https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap);
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  font-family: "Hanken Grotesk";
+  font-size: 18px;
+}
+
+body {
+  margin: 0;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.container {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: hsl(0, 0%, 100%);
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 735px;
+  border-radius: 40px;
+  -webkit-box-shadow: 10px 5px 30px hsl(221, 100%, 96%);
+          box-shadow: 10px 5px 30px hsl(221, 100%, 96%);
+}
+
+.card-result {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(hsl(252, 100%, 67%)), to(hsl(241, 81%, 54%)));
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 40px;
+}
+
+.card-result__title {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  margin: 40px 0;
+}
+
+.card-light {
+  color: hsl(241, 100%, 89%);
+}
+
+.card-dark {
+  color: hsl(224, 30%, 27%);
+}
+
+.result-circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(hsl(256, 72%, 46%)), to(hsla(241, 72%, 46%, 0)));
+  background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+}
+
+.score-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.result-score {
+  color: #fff;
+  font-size: 4rem;
+}
+
+.max-score {
+  margin-left: 10px;
+  color: hsl(241, 100%, 89%);
+}
+
+.result-type {
+  color: #fff;
+  margin: 30px 0 25px;
+  font-size: 2rem;
+}
+
+.result-meaning {
+  color: hsl(241, 100%, 89%);
+  text-align: center;
+  margin: 0 60px 40px;
+}
+
+.card-summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+
+.card-summary .card-result__title,
+.rectangle {
+  margin-left: 40px;
+  margin-bottom: 25px;
+}
+
+.rectangle {
+  width: 285px;
+  height: 55px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rectangle-icon,
+.rectangle-full-result {
+  margin: 15px;
+}
+
+.rectangle-name {
+  margin-right: 25%;
+}
+
+.reaction {
+  background-color: #fff6f5;
+  color: hsl(0, 100%, 67%);
+}
+
+.memory {
+  background-color: #fffbf2;
+  color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+  background-color: #f2fbfa;
+  color: hsl(166, 100%, 37%);
+}
+
+.visual {
+  background-color: #f3f3fd;
+  color: hsl(234, 85%, 45%);
+}
+
+.rectangle-result {
+  color: hsla(241, 72%, 46%, 0);
+}
+
+.rectangle-full-result {
+  color: hsl(221, 100%, 96%);
+}
+
+.btn {
+  border: none;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  width: 285px;
+  height: 55px;
+  border-radius: 30px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, left bottom, from(hsl(252, 100%, 67%)), to(hsl(241, 81%, 54%)));
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+@media (max-width: 770px) {
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 39.1rem;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .card-result {
+    width: 100%;
+    border-radius: 0;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
+  .card-result__title {
+    font-size: 2rem;
+    margin: 20px 0;
+  }
+  .result-circle {
+    width: 15rem;
+    height: 15rem;
+  }
+  .result-score {
+    font-size: 6rem;
+  }
+  .result-type {
+    margin: 30px 0 10px;
+    font-size: 2.5rem;
+  }
+  .result-meaning {
+    margin: 0 30px 40px;
+  }
+  .card-summary .card-result__title,
+  .rectangle,
+  .btn {
+    margin-left: 35px;
+    margin-bottom: 20px;
+  }
+  .rectangle {
+    width: 32rem;
+    height: 5.5rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .rectangle-name {
+    margin-right: 30%;
+  }
+  .btn {
+    width: 32rem;
+    font-size: 1.8rem;
+  }
+}/*# sourceMappingURL=style.css.map */
