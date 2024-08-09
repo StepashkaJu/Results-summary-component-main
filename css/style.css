@@ -64,7 +64,6 @@ body {
 
 .card-result__title {
   font-size: 1.5rem;
-  line-height: 1.5;
   letter-spacing: 0.5px;
   margin: 40px 0;
 }
@@ -160,42 +159,44 @@ body {
 }
 
 .reaction {
-  background-color: #fff6f5;
+  background-color: hsl(0, 100%, 98%);
   color: hsl(0, 100%, 67%);
 }
 
 .memory {
-  background-color: #fffbf2;
+  background-color: hsl(44, 100%, 98%);
   color: hsl(39, 100%, 56%);
 }
 
 .verbal {
-  background-color: #f2fbfa;
+  background-color: hsl(167, 60%, 97%);
   color: hsl(166, 100%, 37%);
 }
 
 .visual {
-  background-color: #f3f3fd;
+  background-color: hsl(233, 69%, 97%);
   color: hsl(234, 85%, 45%);
 }
 
 .rectangle-result {
-  color: hsla(241, 72%, 46%, 0);
+  color: hsl(224, 30%, 27%);
+  font-weight: bold;
 }
 
 .rectangle-full-result {
-  color: hsl(221, 100%, 96%);
+  color: hsl(224, 30%, 27%);
+  opacity: 50%;
+  font-weight: bold;
 }
 
 .btn {
+  width: 285px;
+  height: 55px;
   border: none;
   background-color: hsl(224, 30%, 27%);
   color: hsl(0, 0%, 100%);
-  width: 285px;
-  height: 55px;
   border-radius: 30px;
-  margin-left: 40px;
-  margin-bottom: 40px;
+  margin: 15px 0 40px 40px;
   text-align: center;
 }
 
@@ -203,61 +204,4 @@ body {
   cursor: pointer;
   background: -webkit-gradient(linear, left top, left bottom, from(hsl(252, 100%, 67%)), to(hsl(241, 81%, 54%)));
   background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-}
-
-@media (max-width: 770px) {
-  .card {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 39.1rem;
-    border-radius: 0;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-  .card-result {
-    width: 100%;
-    border-radius: 0;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-  }
-  .card-result__title {
-    font-size: 2rem;
-    margin: 20px 0;
-  }
-  .result-circle {
-    width: 15rem;
-    height: 15rem;
-  }
-  .result-score {
-    font-size: 6rem;
-  }
-  .result-type {
-    margin: 30px 0 10px;
-    font-size: 2.5rem;
-  }
-  .result-meaning {
-    margin: 0 30px 40px;
-  }
-  .card-summary .card-result__title,
-  .rectangle,
-  .btn {
-    margin-left: 35px;
-    margin-bottom: 20px;
-  }
-  .rectangle {
-    width: 32rem;
-    height: 5.5rem;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .rectangle-name {
-    margin-right: 30%;
-  }
-  .btn {
-    width: 32rem;
-    font-size: 1.8rem;
-  }
 }/*# sourceMappingURL=style.css.map */

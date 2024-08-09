@@ -42,7 +42,6 @@ body {
 
 .card-result__title {
   font-size: 1.5rem;
-  line-height: 1.5;
   letter-spacing: 0.5px;
   margin: 40px 0;
 }
@@ -123,42 +122,44 @@ body {
 }
 
 .reaction {
-  background-color: #fff6f5;
+  background-color: $redBackGround;
   color: $lightRedPrimary;
 }
 
 .memory {
-  background-color: #fffbf2;
+  background-color: $yellowBackGround;
   color: $orangeyYellowPrimary;
 }
 
 .verbal {
-  background-color: #f2fbfa;
+  background-color: $greenBackGround;
   color: $greenTealPrimary;
 }
 
 .visual {
-  background-color: #f3f3fd;
+  background-color: $cobaltBackGround;
   color: $cobaltBluePrimary;
 }
 
 .rectangle-result {
-  color: $persianBlueGradient;
+  color: $darkGrayBlueNeutral;
+  font-weight: bold;
 }
 
 .rectangle-full-result {
-  color: $paleBlueNeutral;
+  color: $darkGrayBlueNeutral;
+  opacity: 50%;
+  font-weight: bold;
 }
 
 .btn {
+  width: 285px;
+  height: 55px;
   border: none;
   background-color: $darkGrayBlueNeutral;
   color: $whiteNeutral;
-  width: 285px;
-  height: 55px;
   border-radius: 30px;
-  margin-left: 40px;
-  margin-bottom: 40px;
+  margin: 15px 0 40px 40px;
   text-align: center;
 }
 
@@ -167,63 +168,5 @@ body {
   background: linear-gradient($lightSlateBlueGradient, $lightRoyalBlueGradient);
 }
 
-@media (max-width: 770px) {
-  .card {
-    flex-direction: column;
-    width: 39.1rem;
-    border-radius: 0;
-    box-shadow: none;
-  }
-
-  .card-result {
-    width: 100%;
-    border-radius: 0;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-  }
-
-  .card-result__title {
-    font-size: 2rem;
-    margin: 20px 0;
-  }
-
-  .result-circle {
-    width: 15rem;
-    height: 15rem;
-  }
-
-  .result-score {
-    font-size: 6rem;
-  }
-
-  .result-type {
-    margin: 30px 0 10px;
-    font-size: 2.5rem;
-  }
-
-  .result-meaning {
-    margin: 0 30px 40px;
-  }
-
-  .card-summary .card-result__title,
-  .rectangle,
-  .btn {
-    margin-left: 35px;
-    margin-bottom: 20px;
-  }
-
-  .rectangle {
-    width: 32rem;
-    height: 5.5rem;
-    justify-content: space-between;
-  }
-
-  .rectangle-name {
-    margin-right: 30%;
-  }
-
-  .btn {
-    width: 32rem;
-    font-size: 1.8rem;
-  }
+@media (min-width: 375px) and (max-width: 770px) {
 }
