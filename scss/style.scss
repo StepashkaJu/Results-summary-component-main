@@ -123,7 +123,6 @@ body {
 .rectangle-name {
   margin-right: 25%;
 }
-
 .reaction {
   background-color: $redBackGround;
   color: $lightRedPrimary;
@@ -175,7 +174,6 @@ body {
   .card {
     flex-direction: column;
     width: 20.8rem;
-    border-radius: 0;
     box-shadow: none;
   }
 
@@ -205,12 +203,14 @@ body {
   .result-meaning {
     margin: 0 30px 40px;
   }
-
+  .card-summary {
+    width: 100%;
+  }
   .card-summary .card-result__title,
   .rectangle,
   .btn {
     margin-left: 35px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
 
   .rectangle {
@@ -225,5 +225,7 @@ body {
 
   .btn {
     width: 315px;
+    margin-top: 8px;
+    margin-bottom: 30px;
   }
 }
